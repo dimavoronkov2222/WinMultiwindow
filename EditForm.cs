@@ -22,9 +22,14 @@ namespace WinMultiwindow
         {
             InitializeComponent();
             this.good = good;
-            textBox1.Text = good.Name;
-            textBox2.Text = good.Description;
-            textBox3.Text = good.Price;
+            name.Text = good.Name;
+            author.Text = good.Author;
+            year.Text = good.Year_of_publication;
+            genre.Text = good.Genre;
+            isbn.Text = good.ISBN;
+            return_date.Text = good.Return_date;
+            date_of_issue.Text = good.date_of_issue;
+            price.Text = good.Price;
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -32,9 +37,14 @@ namespace WinMultiwindow
             {
                 good = new Good();
             }
-            good.Name = textBox1.Text;
-            good.Description = textBox2.Text;
-            good.Price = textBox3.Text;
+            good.Name = name.Text;
+            good.Author = author.Text;
+            good.Year_of_publication = year.Text;
+            good.Genre = genre.Text;
+            good.ISBN = isbn.Text;
+            good.Return_date = return_date.Text;
+            good.date_of_issue = date_of_issue.Text;
+            good.Price = price.Text;
             this.DialogResult = DialogResult.OK;
             this.Close();
         }

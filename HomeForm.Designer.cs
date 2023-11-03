@@ -49,7 +49,7 @@
             // button1
             // 
             button1.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(14, 540);
+            button1.Location = new Point(14, 543);
             button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
             button1.Size = new Size(189, 44);
@@ -61,7 +61,7 @@
             // button2
             // 
             button2.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.Location = new Point(680, 543);
+            button2.Location = new Point(404, 543);
             button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
             button2.Size = new Size(189, 44);
@@ -73,7 +73,7 @@
             // button3
             // 
             button3.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.Location = new Point(361, 543);
+            button3.Location = new Point(209, 543);
             button3.Margin = new Padding(3, 4, 3, 4);
             button3.Name = "button3";
             button3.Size = new Size(189, 44);

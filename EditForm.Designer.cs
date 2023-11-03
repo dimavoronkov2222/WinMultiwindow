@@ -32,17 +32,21 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            name = new TextBox();
+            author = new TextBox();
+            price = new TextBox();
             button1 = new Button();
             button2 = new Button();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
+            year = new TextBox();
+            genre = new TextBox();
+            isbn = new TextBox();
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
+            return_date = new TextBox();
+            label7 = new Label();
+            date_of_issue = new TextBox();
+            label8 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -69,44 +73,44 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(14, 243);
+            label3.Location = new Point(14, 314);
             label3.Name = "label3";
             label3.Size = new Size(54, 23);
             label3.TabIndex = 2;
             label3.Text = "Price";
             // 
-            // textBox1
+            // name
             // 
-            textBox1.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox1.Location = new Point(74, 12);
-            textBox1.Margin = new Padding(3, 4, 3, 4);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(187, 30);
-            textBox1.TabIndex = 3;
+            name.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            name.Location = new Point(74, 12);
+            name.Margin = new Padding(3, 4, 3, 4);
+            name.Name = "name";
+            name.Size = new Size(187, 30);
+            name.TabIndex = 3;
             // 
-            // textBox2
+            // author
             // 
-            textBox2.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox2.Location = new Point(74, 53);
-            textBox2.Margin = new Padding(3, 4, 3, 4);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(187, 26);
-            textBox2.TabIndex = 4;
+            author.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            author.Location = new Point(74, 53);
+            author.Margin = new Padding(3, 4, 3, 4);
+            author.Multiline = true;
+            author.Name = "author";
+            author.Size = new Size(187, 26);
+            author.TabIndex = 4;
             // 
-            // textBox3
+            // price
             // 
-            textBox3.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox3.Location = new Point(74, 239);
-            textBox3.Margin = new Padding(3, 4, 3, 4);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(181, 30);
-            textBox3.TabIndex = 5;
+            price.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            price.Location = new Point(74, 311);
+            price.Margin = new Padding(3, 4, 3, 4);
+            price.Name = "price";
+            price.Size = new Size(187, 30);
+            price.TabIndex = 5;
             // 
             // button1
             // 
             button1.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(14, 303);
+            button1.Location = new Point(12, 363);
             button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
             button1.Size = new Size(117, 40);
@@ -118,7 +122,7 @@
             // button2
             // 
             button2.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.Location = new Point(198, 303);
+            button2.Location = new Point(187, 363);
             button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
             button2.Size = new Size(117, 40);
@@ -127,26 +131,26 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
-            // textBox4
+            // year
             // 
-            textBox4.Location = new Point(187, 97);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(187, 27);
-            textBox4.TabIndex = 8;
+            year.Location = new Point(187, 97);
+            year.Name = "year";
+            year.Size = new Size(187, 27);
+            year.TabIndex = 8;
             // 
-            // textBox5
+            // genre
             // 
-            textBox5.Location = new Point(84, 128);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(187, 27);
-            textBox5.TabIndex = 9;
+            genre.Location = new Point(75, 130);
+            genre.Name = "genre";
+            genre.Size = new Size(187, 27);
+            genre.TabIndex = 9;
             // 
-            // textBox6
+            // isbn
             // 
-            textBox6.Location = new Point(75, 174);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(187, 27);
-            textBox6.TabIndex = 10;
+            isbn.Location = new Point(75, 174);
+            isbn.Name = "isbn";
+            isbn.Size = new Size(187, 27);
+            isbn.TabIndex = 10;
             // 
             // label4
             // 
@@ -178,22 +182,60 @@
             label6.TabIndex = 13;
             label6.Text = "ISBN";
             // 
+            // return_date
+            // 
+            return_date.Location = new Point(116, 222);
+            return_date.Name = "return_date";
+            return_date.Size = new Size(187, 27);
+            return_date.TabIndex = 14;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Location = new Point(-1, 223);
+            label7.Name = "label7";
+            label7.Size = new Size(111, 23);
+            label7.TabIndex = 15;
+            label7.Text = "Return date";
+            // 
+            // date_of_issue
+            // 
+            date_of_issue.Location = new Point(137, 266);
+            date_of_issue.Name = "date_of_issue";
+            date_of_issue.Size = new Size(187, 27);
+            date_of_issue.TabIndex = 16;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Location = new Point(14, 267);
+            label8.Name = "label8";
+            label8.Size = new Size(119, 23);
+            label8.TabIndex = 17;
+            label8.Text = "Date of issue";
+            // 
             // EditForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(383, 430);
+            ClientSize = new Size(381, 422);
+            Controls.Add(label8);
+            Controls.Add(date_of_issue);
+            Controls.Add(label7);
+            Controls.Add(return_date);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
-            Controls.Add(textBox6);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
+            Controls.Add(isbn);
+            Controls.Add(genre);
+            Controls.Add(year);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(price);
+            Controls.Add(author);
+            Controls.Add(name);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -210,16 +252,20 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox name;
+        private TextBox author;
+        private TextBox price;
         private Button button1;
         private Button button2;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
+        private TextBox year;
+        private TextBox genre;
+        private TextBox isbn;
         private Label label4;
         private Label label5;
         private Label label6;
+        private TextBox return_date;
+        private Label label7;
+        private TextBox date_of_issue;
+        private Label label8;
     }
 }
